@@ -1,4 +1,4 @@
-/
+
 export default function TempBar({ min, max, current, scaleMin = -10, scaleMax = 40 }) {
   const clamp = (v) => Math.min(1, Math.max(0, (v - scaleMin) / (scaleMax - scaleMin)))
   const minPct = clamp(min) * 100
